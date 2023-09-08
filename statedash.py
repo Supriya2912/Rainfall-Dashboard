@@ -166,11 +166,18 @@ def update_dropdown(location_type):
     [Input('redirect-button', 'n_clicks')],
     [State('state-ut-dropdown', 'value')]
 )
+
+# def open_external_url(n_clicks, selected_location):
+#     if n_clicks and selected_location:
+#         selected_url = state_urls.get(selected_location) if selected_location in state_urls else ut_urls.get(selected_location)
+#         if selected_url:
+#             webbrowser.open_new_tab(selected_url)  # Open the URL in a new tab
+
 def open_external_url(n_clicks, selected_location):
     if n_clicks and selected_location:
         selected_url = state_urls.get(selected_location) if selected_location in state_urls else ut_urls.get(selected_location)
         if selected_url:
-            webbrowser.open_new_tab(selected_url)  # Open the URL in a new tab
+            return f'window.open("{selected_url}", "_blank");'  # JavaScript to open the URL in a new tab
 
 if __name__ == '__main__':
     app.run_server(debug=True)
