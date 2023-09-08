@@ -91,11 +91,12 @@ app.layout = html.Div([
               html.A(
             html.Button(
                 'Go',
+                 href='',  # Set the URL dynamically using a callback
                 id='redirect-button',
+                target='_blank',  # Opens the link in a new tab
                 style={'background-color': 'black', 'color': 'white', 'width': '100px', 'height': '40px', 'font-size': '16px', 'border-radius': '20px'}
             ),
-            id='redirect-link',
-            target='_blank',  # Opens the link in a new tab
+           
         ),
         ], style={'display': 'flex', 'justify-content': 'center', 'align-items': 'center'}),
      
