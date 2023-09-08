@@ -88,11 +88,15 @@ app.layout = html.Div([
                 placeholder='Select a State or Union Territory',
                 style={'width': '300px', 'margin-right': '20px', 'text-align': 'center'}
             ),
+              html.A(
             html.Button(
                 'Go',
                 id='redirect-button',
                 style={'background-color': 'black', 'color': 'white', 'width': '100px', 'height': '40px', 'font-size': '16px', 'border-radius': '20px'}
             ),
+            id='redirect-link',
+            target='_blank',  # Opens the link in a new tab
+        ),
         ], style={'display': 'flex', 'justify-content': 'center', 'align-items': 'center'}),
      
         # About Section
