@@ -4,3 +4,4 @@ dash-html-components==2.0.0
 dash-renderer==1.9.1
 dash-bootstrap-components==1.5.0
 gunicorn
+werkzeug== 2.3.7
