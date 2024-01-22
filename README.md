@@ -1,6 +1,7 @@
 # mainpage
-link:https://mainpage-jpuq.onrender.com/
-Rainfall Dashboard
+#link:https://mainpage-jpuq.onrender.com/
+
+# Rainfall Dashboard
 
 This project was developed as part of my internship at the India Meteorological Department, Pune. The Rainfall Dashboard is designed to visualize and analyze rainfall data for different states in India. The main features of the dashboard include:
 
